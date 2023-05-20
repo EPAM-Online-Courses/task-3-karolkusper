@@ -35,6 +35,7 @@ public class ExtraordinaryVillager extends Villager {
 
     @Override
     public void takeHit(int damage) {
-        this.setHealth(0);
+        super.takeHit(damage);
+        setHealth(0);
     }
 }

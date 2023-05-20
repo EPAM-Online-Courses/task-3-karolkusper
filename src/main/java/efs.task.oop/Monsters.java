@@ -1,7 +1,7 @@
 package efs.task.oop;
 
 public class Monsters {
-    private static int monstersHealth;
+
     public static final Monster andariel = new Monster(10, 70) {
         @Override
         public void attack(Fighter victim) {
@@ -26,7 +26,7 @@ public class Monsters {
             monstersHealth -= (5 + damage);
         }
     };
-
+    private static int monstersHealth;
     static {
         monstersHealth = andariel.getHealth() + blacksmith.getHealth();
     }
